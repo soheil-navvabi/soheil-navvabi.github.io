@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy · ELSESTAR</title>
+  <meta name="description" content="How ELSESTAR handles YouTube authorization, live chat votes, journey saves and requests to delete data.">
+  <meta name="theme-color" content="#070c18">
+  <link rel="canonical" href="https://soheil-navvabi.github.io/privacy.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="./" aria-label="ELSESTAR home">ELSESTAR</a><nav aria-label="Main navigation"><a href="./">The journey</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<main id="content" class="policy">
+  <div class="eyebrow">Your data and the journey</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective and last updated: 2 October 2026</p>
+  <p>ELSESTAR is operated by Soheil Navvabi. This policy covers this information website and the ELSESTAR application that runs interactive space-exploration broadcasts. ELSESTAR uses <strong>YouTube API Services</strong>. YouTube and Google also handle your viewing and chat activity under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Who signs in</h2>
+  <p>Only the channel operator authorizes the ELSESTAR application through Google. Viewers do not connect their Google account to this website or give ELSESTAR an OAuth token. They participate using YouTube's own live chat. We never ask for your Google or YouTube password.</p>
+
+  <h2>Information accessed and why</h2>
+  <ul>
+    <li><strong>Channel and broadcast data:</strong> the authorized channel's identity, stream and broadcast identifiers, titles, thumbnails, lifecycle status and live-chat connection details. We use these to verify the correct channel, prepare and run broadcasts, update broadcast metadata and reconnect to live chat.</li>
+    <li><strong>Authorization credentials:</strong> Google access and refresh tokens, and the app's OAuth client configuration. They allow the operator's app to connect to YouTube and renew access without repeated sign-in.</li>
+    <li><strong>Live-chat data:</strong> YouTube supplies message content, message identifiers, timestamps and author details, including channel identifiers. The app uses a comment to recognize a valid vote and uses its author identifier to count one ballot per account. It does not build a transcript of raw chat or display commenters' names, profile pictures or raw messages in the game.</li>
+    <li><strong>Game and operational records:</strong> current ballot choices, vote totals, choice outcomes, journey checkpoints, connection cursors and technical health/error counts. These keep the journey consistent, prevent duplicate processing and support recovery.</li>
+  </ul>
+  <p>The Google permission requested is <code>youtube.force-ssl</code>. Google's consent screen describes a broad YouTube management permission; ELSESTAR's present use is the channel and broadcast work described above. It does not offer public account-management features. Paid chat events do not grant extra votes or gameplay effects in the current journey.</p>
+
+  <h2>Votes, retention and deletion</h2>
+  <p>The app replaces a viewer's channel identifier with a keyed pseudonymous value for its ballot. This reduces direct identification; it is not a claim of complete anonymity. The active ballot map is cleared when its choice resolves. Aggregate outcomes and fictional world history remain as part of the expedition.</p>
+  <p>Message identifiers used to prevent duplicates are held in a bounded in-memory cache. Raw comment text is processed transiently rather than saved as a chat log. Journey checkpoints and encrypted recovery copies can contain the pseudonymous ballot that was active when saved.</p>
+  <p>The operator reviews retained YouTube API data and removes data that is no longer needed. Retained API data is deleted or refreshed within 30 days where required by YouTube's policies; recovery copies containing old API data are subject to the same review. Credentials are kept while the operator's authorization is active. Revocation or a verified deletion request also triggers removal of the relevant credentials and API data from local and cloud copies.</p>
+  <p>For a privacy question, complaint or deletion request, email <a href="mailto:soheil.navvabi@gmail.com">soheil.navvabi@gmail.com</a> with the subject <strong>ELSESTAR privacy</strong>. Include your YouTube channel URL and, if relevant, the broadcast and approximate time. Do not send passwords or tokens. We may ask for enough information to verify that a request concerns your data. Verified deletion requests are handled as soon as possible and within the applicable YouTube policy deadline, no later than seven days. Removing our copies does not remove your original comment or a video from YouTube; use YouTube's controls for those.</p>
+
+  <h2>Revoke Google access</h2>
+  <p>An operator who authorized the app can withdraw access at any time through <a href="https://security.google.com/settings/security/permissions">Google's third-party access settings</a> and contact us to request deletion of stored data. After revocation, the app can no longer renew access. We remove associated authorized data as soon as possible, within seven days of a direct revocation request or within 30 days of a revocation through Google. Viewers who have not authorized ELSESTAR do not have an ELSESTAR connection to revoke.</p>
+
+  <h2>Storage, service providers and access</h2>
+  <p>The operator's computer and Runpod cloud infrastructure run the application and hold protected operational files. Runpod also stores encrypted journey backups. GitHub hosts this public website and provides private deployment automation and secret storage. Google/YouTube provides authorization, broadcast delivery and live chat. These providers process information needed to deliver their respective services, and infrastructure providers may access operational data or credentials while running the authorized workload.</p>
+  <p>Access is limited to the operator and services used to operate and maintain the experience. Credentials and game saves are excluded from this public website and its source repository. Backups are encrypted before being uploaded; live processes still need access to decrypted data. Information may be processed outside your country by these providers. No security measure can guarantee complete protection.</p>
+  <p>Google API data is used and transferred according to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. We do not sell this data, use it to target advertisements, or use it to train AI models. Necessary access for operation, a specific support request, security or a legal obligation is limited to that purpose.</p>
+
+  <h2>This website and YouTube</h2>
+  <p>This website adds no analytics scripts, tracking pixels, embedded player or advertising code, and sets no application cookies. GitHub Pages logs visitors' IP addresses for security; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Clicking a YouTube link takes you to YouTube, which may show advertising and use cookies or other device information under Google's policies. Contacting us by email gives us the address and information you choose to send; we use it to answer and handle your request.</p>
+
+  <h2>Audience and changes</h2>
+  <p>The journey is intended for a general teen/adult audience, not specifically children. Use YouTube only if you meet its applicable age and account requirements. We update this policy if our data practices change and revise the date above. A material change to the operator's authorized data use requires renewed consent before that new use begins.</p>
+</main>
+<footer><p>ELSESTAR · Operated by Soheil Navvabi</p><div class="links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="mailto:soheil.navvabi@gmail.com">Contact</a></div></footer>
+</body>
+</html>
